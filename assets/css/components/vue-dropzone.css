@@ -1,0 +1,50 @@
+@import 'vue2-dropzone/dist/vue2Dropzone.min.css';
+
+.dz-progress {
+   display: none;
+ }
+
+ .vue-dropzone {
+   @apply bg-transparent rounded border border-dashed border-primary border-opacity-50;
+   /* &.dropzone-columns-2 {
+     @apply grid-cols-2;
+   }
+   &.dropzone-columns-2:not(.dz-started) .dz-message {
+      @apply col-span-2;
+    }
+   &.dropzone-columns-3 {
+     @apply grid-cols-3;
+   }
+   &.dropzone-columns-3:not(.dz-started) .dz-message {
+      @apply col-span-3;
+    } */
+   /* min-height: 25rem; */
+   align-items: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font: inherit;
+   .dz-preview {
+     display: none !important;
+   }
+ }
+ .dropzone .dz-preview {
+   @apply rounded;
+   overflow: hidden;
+   margin: 0;
+   display: block;
+   img {
+     height: 100%;
+     width: 100%;
+     object-position: center;
+     object-fit: cover;
+   }
+ }
+ .dropzone.dz-started .dz-message {
+   display: block;
+ }
+ 
+
+ .dropzone-upload-message {
+   @apply text-black text-base;
+ }
